@@ -9,7 +9,9 @@ const app = express();
 // allow cross-origin-requests
 app.use(cors());
 
-mongoose.connect('mongodb://kwquest:ILbalm%231727@ds153841.mlab.com:53841/kwquest');
+mongoose.connect(
+  'mongodb://kwquest:ILbalm%231727@ds153841.mlab.com:53841/kwquest',
+  { useNewUrlParser: true });
 mongoose.connection.once('open', () => {
   console.log('Connected to database.');
 });

@@ -27,3 +27,15 @@ This is the database server. It may or may not be instantiated on our own server
 
 Each subdirectory is a separate application with it's own set of libraries and server entry point.   
 
+# Running
+Each application has its own port.  For convenience in developing, I use nodemon to automatically reload the server when editing files. 
+
+    $ nodemon app
+    [nodemon] 1.18.3
+    [nodemon] to restart at any time, enter `rs`
+    [nodemon] watching: *.*
+    [nodemon] starting `node app.js`
+    (node:47820) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+    now listening for requests on port 4000
+    Connected to database.
+
