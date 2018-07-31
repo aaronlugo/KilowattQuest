@@ -16,6 +16,20 @@ const stationSchema = new Schema({
   battery: Boolean ,
   statusDays: Number,
   urlDiscuss: Boolean,
+  gps: {
+    latitude: Number,
+    longitude: Number
+  },
+  address: {
+    street: String,
+    city: String,
+    state: String,
+    zip: String,
+    country: String,
+    countryId: String,
+    region: String,
+    regionId: String
+  }
 })
 
 module.exports = mongoose.model('Station', stationSchema);

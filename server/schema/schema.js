@@ -33,15 +33,15 @@ const StationType = new GraphQLObjectType({
     battery: { type: GraphQLBoolean },
     statusDays: { type: GraphQLInt },
     urlDiscuss: { type: GraphQLBoolean },
-//    address: { type: AddressType },
-//    gps: { type: GPSType }
+    address: { type: AddressType },
+    gps: { type: GPSType }
   })
 });
 
 const AddressType = new GraphQLObjectType({
   name: "Address",
   fields: () => ({
-    street: { tyhpe: GraphQLString },
+    street: { type: GraphQLString },
     city: { type: GraphQLString },
     state: { type: GraphQLString },
     zip: { type: GraphQLString },
