@@ -21,7 +21,7 @@ export default class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <StationsList />
+        <StationsMap />
      </ApolloProvider>
     );
   }
