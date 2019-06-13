@@ -1,9 +1,9 @@
-# ChargerFinder
-This is the project for the entire Chargers Finder application, including app client, admin client,
+# KilowattQuest
+This is the project for the entire KilowattQuest application, including app client, admin client,
 server and database.
 
 ## Modules
-ChargersFinder consists of four subdirectories, each of which contains a different subproject.  
+KilowattQuest consists of four subdirectories, each of which contains a different subproject.  
 
 ### Client
 This is the mobile application client, the main product.
